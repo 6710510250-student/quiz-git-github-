@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azzura Verde | Fresh Italian Restaurant</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+    --primary:#1abc9c;
+    --dark:#0f2f2f;
+    --light:#f4fffd;
+    --accent:#16a085;
+    --gray:#6b7c7c;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:'Inter',sans-serif;
+    background:var(--light);
+    color:var(--dark);
+    line-height:1.6;
+}
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+header{
+    padding:20px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.logo{
+    font-family:'Playfair Display',serif;
+    font-size:28px;
+    font-weight:600;
+}
+nav a{
+    margin-left:25px;
+    text-decoration:none;
+    color:var(--dark);
+    font-weight:500;
+}
+nav a:hover{
+    color:var(--primary);
+}
+.hero{
+    padding:100px 0;
+    text-align:center;
+}
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:48px;
+    margin-bottom:20px;
+}
+.hero p{
+    font-size:18px;
+    color:var(--gray);
+    margin-bottom:40px;
+}
+.btn{
+    display:inline-block;
+    padding:14px 32px;
+    background:var(--primary);
+    color:#fff;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:0.3s;
+}
+.btn:hover{
+    background:var(--accent);
+}
+.section{
+    padding:80px 0;
+    text-align:center;
+}
+.section h2{
+    font-family:'Playfair Display',serif;
+    font-size:36px;
+    margin-bottom:20px;
+}
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+.card{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+.card h3{
+    margin-bottom:15px;
+}
+.menu-preview{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+.menu-item{
+    background:#fff;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.05);
+}
+.menu-item h4{
+    margin-bottom:10px;
+}
+.cta{
+    background:var(--primary);
+    color:#fff;
+    padding:80px 20px;
+    text-align:center;
+}
+.cta h2{
+    font-size:36px;
+    margin-bottom:20px;
+}
+footer{
+    padding:30px 0;
+    text-align:center;
+    font-size:14px;
+    color:var(--gray);
+}
+</style>
+</head>
+<body>
+
+<header class="container">
+    <div class="logo">Azzura Verde</div>
+    <nav>
+        <a href="#">หน้าแรก</a>
+        <a href="#">เมนู</a>
+        <a href="#">เกี่ยวกับเรา</a>
+        <a href="#">ติดต่อ</a>
+    </nav>
+</header>
+
+<section class="hero container">
+    <h1>สัมผัสรสชาติอิตาลีแท้ ๆ สดใหม่ทุกจาน</h1>
+    <p>วัตถุดิบคุณภาพ นำเข้าจากอิตาลี ปรุงสดใหม่ในทุกวัน พร้อมบรรยากาศสีเขียวฟ้าสบายตา</p>
+    <a href="#" class="btn">จองโต๊ะเลย</a>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>ทำไมต้อง Azzura Verde?</h2>
+        <div class="features">
+            <div class="card">
+                <h3>วัตถุดิบนำเข้า</h3>
+                <p>ชีส น้ำมันมะกอก และเส้นพาสต้านำเข้าจากอิตาลีแท้</p>
+            </div>
+            <div class="card">
+                <h3>ทำสดใหม่ทุกวัน</h3>
+                <p>พิซซ่าอบจากเตาไม้ และซอสสูตรต้นตำรับ</p>
+            </div>
+            <div class="card">
+                <h3>บรรยากาศพรีเมียม</h3>
+                <p>ร้านโทนสีเขียวฟ้า สบายตา เหมาะกับทุกโอกาส</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background:#e8fffb;">
+    <div class="container">
+        <h2>เมนูแนะนำ</h2>
+        <div class="menu-preview">
+            <div class="menu-item">
+                <h4>Truffle Cream Pasta</h4>
+                <p>พาสต้าครีมทรัฟเฟิลหอมเข้มข้น</p>
+            </div>
+            <div class="menu-item">
+                <h4>Margherita Pizza</h4>
+                <p>พิซซ่าเตาไม้ มะเขือเทศสด มอสซาเรลล่า</p>
+            </div>
+            <div class="menu-item">
+                <h4>Seafood Risotto</h4>
+                <p>ริซอตโต้ซีฟู้ดสไตล์เมดิเตอร์เรเนียน</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <h2>พร้อมสัมผัสประสบการณ์อิตาเลียนแท้หรือยัง?</h2>
+    <a href="#" class="btn" style="background:#fff;color:#1abc9c;">จองโต๊ะทันที</a>
+</section>
+
+<footer>
+    © 2026 Azzura Verde | Italian Restaurant
+</footer>
+
+</body>
+</html>
